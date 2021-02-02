@@ -31,6 +31,8 @@ These prefixes like (petrol) are used when a company has deviated from its core 
 
  `(parking)` - For stores with a pay-and-display carpark, or government carparks.
 
+ `(recycling)` - Again those pesky governments providing multiple facilities.
+
  `(atm)` - Always used on cash machines
 
  So far we've covered physical stores, but we can also do web:
