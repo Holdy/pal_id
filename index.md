@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# Introduction
 
-You can use the [editor on GitHub](https://github.com/Holdy/pal_id/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+pal_id (payee and location) is a simple and guessable way of allocating ids to business premises.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The simplest type of pal_id looks like:
 
-### Markdown
+`harrods.com~sw1x_7xl~gb`
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+We've taken three components and joined them with a tilde:
 
-```markdown
-Syntax highlighted code block
+(`basic webdomain`) ~ (`store postcode`) ~ (`2 letter country for good measure`)
 
-# Header 1
-## Header 2
-### Header 3
+So far, so good, but Harrods is a pretty unique place (in the UK at least), it's more useful to differentiate chain stores - here are 3 of the many Tesco stores in Norwich, Norfolk:
 
-- Bulleted
-- List
+`tesco.com~nr6_6xa~gb`<br/>
+`tesco.com~nr2_2rw~gb`<br/>
+`tesco.com~nr1_3lg~gb`
 
-1. Numbered
-2. List
+Tesco and the other supermarket chains often have on-site petrol stations which will almost always share a postcode with the associated store - so we differentiate them with a prefix:
 
-**Bold** and _Italic_ and `Code` text
+`tesco.com~nr7_8ab~gb` - A store just like the 3 above.<br/>
+`(petrol)tesco.com~nr7_8ab~gb` - The on site petrol station.
 
-[Link](url) and ![Image](src)
-```
+<em>NOTE: 'petrol' seems like we're forgetting diesel and LPG, but they're all petrol(ium) at heart.</em>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+These prefixes are used when a company has deviated from its core business. other prefixes we will see are:
 
-### Jekyll Themes
+ `(pharmacy)` - differentiates from 'normal' co-op stores.
+ 
+ `(mobile)` - differentiates (for example) skys phone/sim/tablet business from the TV channel
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Holdy/pal_id/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+ `(parking)` - For stores with a pay-and-display carpark, or government carparks.
+ 
+ 
