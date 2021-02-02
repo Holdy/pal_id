@@ -1,12 +1,12 @@
 # Introduction
 
-pal_id (payee and location) is a simple and guessable way of allocating ids to business premises.
+pal_id (payee and location) is a simple and guessable/repeatable way of allocating ids to business premises. With such ids in place, we can leverage and combine different datasets, and process commercial data from a geographical perspective.
 
-The simplest type of pal_id looks like:
+The simplest form of pal_id looks like:
 
 `harrods.com~sw1x_7xl~gb`
 
-We've taken three components and joined them with a tilde:
+It's pretty easy to guess what this is referring to, as we've simply taken three components and joined them with a tilde:
 
 (`basic webdomain`) ~ (`store postcode`) ~ (`2 letter country for good measure`)
 
@@ -23,12 +23,16 @@ Tesco and the other supermarket chains often have on-site petrol stations which 
 
 <em>NOTE: 'petrol' seems like we're forgetting diesel and LPG, but they're all petrol(ium) at heart.</em>
 
-These prefixes are used when a company has deviated from its core business. other prefixes we will see are:
+These prefixes like (petrol) are used when a company has deviated from its core business. other prefixes we will see are:
 
  `(pharmacy)` - differentiates from 'normal' co-op stores.
  
  `(mobile)` - differentiates (for example) skys phone/sim/tablet business from the TV channel
 
  `(parking)` - For stores with a pay-and-display carpark, or government carparks.
- 
- 
+
+ `(atm)` - Always used on cash machines
+
+ So far we've covered physical stores, but we can also do web:
+
+`tesco.com~online~gb` we may know its a bricks-and-mortar store, but we don't know where `tesco.com~_~gb` and if we're not sure `tesco.com~~gb`
